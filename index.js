@@ -64,6 +64,7 @@ function promptUser() {
     return `# ${answers.title}
 ## Description 
   ${answers.description}
+
 ## Table of Contents 
   [Installation](#installation)
   [Usage](#usage)
@@ -71,16 +72,22 @@ function promptUser() {
   [License](#license)
   [Tests](#tests)
   [Questions](#questions)
+
 ## Installation
   ${answers.installation}
+
 ## Usage
   ${answers.usage}
+
 ##Contributers
   ${answers.contributing}
+
 ## License
 [![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
+
 ## Tests
   ${answers.tests}
+  
 ## Questions
   With questions regarding this CLI application please contact me via email [email]${answers.email} or github [gitbub]${answers.github}
 
