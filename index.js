@@ -60,6 +60,7 @@ function promptUser() {
     ]);
   }
 
+
   function generateREADME(answers) {
     return `# ${answers.title}
 ## Description 
@@ -87,9 +88,9 @@ function promptUser() {
 
 ## Tests
   ${answers.tests}
-  
+
 ## Questions
-  With questions regarding this CLI application please contact me via email [email]${answers.email} or github [gitbub]${answers.github}
+  With questions regarding this CLI application please contact me via email ${answers.email} or github ${answers.github}
 
 `}
   
