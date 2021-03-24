@@ -1,4 +1,4 @@
-  const inquirer = require("inquirer");
+const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 
@@ -19,7 +19,7 @@ function promptUser() {
       },
       {
         type: "input",
-        name: "toc",
+        name: "contents",
         message: "Please add a Table of Contents"
       },
       {
@@ -33,6 +33,11 @@ function promptUser() {
         message: "How will this application be used?"
       },
       {
+        type: "input",
+        name: "contributing",
+        message: "Please provide guidelines for contributing"
+      },
+      {
         type: "list",
         name: "license",
         message: "Which license are you using?",
@@ -44,33 +49,63 @@ function promptUser() {
       },
       {
         type: "input",
-        name: "contributing",
-        message: "Please provide guidelines for contributing"
-      },
-      {
-        type: "input",
         name: "tests",
         message: "Please provide testing instructions"
       },
       {
         type: "input",
-        name: "questions",
-        message: "If you have any questions, insert here."
+        name: "email",
+        message: "Please enter your email address"
+      }
+      {
+        type: "input",
+        name: "github",
+        message: "Please enter your github username"
       }
     ]);
   }
 
+  function generateREADME(answers) {
+    return `# ${answers.title}
+## Description 
+  ${answers.description}
+## Table of Contents 
+  [Installation](#installation)
+  [Usage](#usage)
+  [Contributing](#contributing)
+  [License](#license)
+  [Tests](#tests)
+  [Questions](#questions)
+## Installation
+  ${answers.installation}
+## Usage
+  ${answers.usage}
+##Contributers
+  ${answers.contributing}
+## License
+[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})
+## Tests
+  ${answers.tests}
+## Questions
+  With questions regarding this CLI application please contact me via email [email]${answers.email} or github [gitbub]${answers.github}
+
+`}
+  
+
+promptUser()
+  .then(function(answers) {
+    const readme = generateREADME(answers);
+
+    return writeFileAsync("generatedReadMe.md", readme);
+  })
+  .then(function() {
+    console.log("Successfully wrote to generatedReadMe.md");
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
 
 
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
-// function to initialize program
-function init() {
 
-}
-
-// function call to initialize program
-init();
