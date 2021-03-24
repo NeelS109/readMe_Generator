@@ -20,7 +20,7 @@
   Feel free to contribute as long as you uphold contribution guidelines. 
 
 ## License
-[![License: MIT License](https://img.shields.io/badge/License-MIT License-blue.svg)](https://opensource.org/licenses/MIT License)
+[![License: MIT License](https://img.shields.io/badge/License-MITLicense-blue.svg)](https://opensource.org/licenses/MITLicense)
 
 ## Tests
   To test this, install it and run node on index.js. Answer the questions as prompted and see what the output is!
