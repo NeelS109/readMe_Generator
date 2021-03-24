@@ -1,0 +1,28 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "Generate quality readme files directly from app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Neel Sheth",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeelS109/readMe_Generator.git"
+  },
+  "keywords": [
+    "git",
+    "readme",
+    "node.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/NeelS109/readMe_Generator/issues"
+  },
+  "homepage": "https://github.com/NeelS109/readMe_Generator#readme"
+}
