@@ -56,7 +56,7 @@ function promptUser() {
         type: "input",
         name: "email",
         message: "Please enter your email address"
-      }
+      },
       {
         type: "input",
         name: "github",
