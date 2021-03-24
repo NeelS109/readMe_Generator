@@ -2,6 +2,9 @@
 ## Description 
   This command line interface (CLI) application provides the user with the ability to create a industry standard README.md file. Once installed, run the application via Node and answer the questions when prompted. This will generate a new READEME.md file that is formatted correctly. 
 
+![](./assets/examplegif1.gif)
+![](./assets/examplegif2.gif)
+
 ## Table of Contents 
   [Installation](#installation)
   [Usage](#usage)
