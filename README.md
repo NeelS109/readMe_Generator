@@ -5,14 +5,6 @@
 ![](./assets/examplegif1.gif)
 ![](./assets/examplegif2.gif)
 
-## Table of Contents 
-  [Installation](#installation)
-  [Usage](#usage)
-  [Contributing](#contributing)
-  [License](#license)
-  [Tests](#tests)
-  [Questions](#questions)
-
 ## Installation
   To install, clone this repo and run Node on index.js. This will prompt you to answer questions based on your repo. Once completed, the new README.md will generate automatically. 
 
