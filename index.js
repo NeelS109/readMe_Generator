@@ -19,11 +19,6 @@ function promptUser() {
       },
       {
         type: "input",
-        name: "contents",
-        message: "Please add a Table of Contents"
-      },
-      {
-        type: "input",
         name: "installation",
         message: "What are the installation instructions"
       },
